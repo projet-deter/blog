@@ -1,7 +1,19 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
+Arts and Entertainment:
+  name: Arts and Entertainment
 
-two:
-  name: MyString
+Computers and Electronics:
+  name: Computers and Electronics
+
+Education and Communications:
+  name: Education and Communications
+
+Family Life:
+  name: Family Life
+
+Health:
+  name: Health
+
+Travel:
+  name: Travel

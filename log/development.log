@@ -5462,3 +5462,186 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 26ms (Views: 20.8ms | ActiveRecord: 0.7ms | Allocations: 16380)
 
 
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "articles";
+DELETE FROM "categories";
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyText', '2019-07-06 10:51:15.881089', '2019-07-06 10:51:15.881089');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at") VALUES (298486374, 'MyString', 'MyText', '2019-07-06 10:51:15.881089', '2019-07-06 10:51:15.881089');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at") VALUES (595410313, 'rtgbervd', 'Myethet44Text', '2019-07-06 10:51:15.881089', '2019-07-06 10:51:15.881089');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (980190962, 'MyString', '2019-07-06 10:51:15.884469', '2019-07-06 10:51:15.884469');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (298486374, 'MyString', '2019-07-06 10:51:15.884469', '2019-07-06 10:51:15.884469')[0m
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "articles";
+DELETE FROM "categories";
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at") VALUES (511275909, 'Artnb1', 'Blablabla', '2019-07-06 11:43:12.752901', '2019-07-06 11:43:12.752901');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (892527186, 'gjghjhjghjhjgj', '2019-07-06 11:43:12.756183', '2019-07-06 11:43:12.756183');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (298486374, 'MyString', '2019-07-06 11:43:12.756183', '2019-07-06 11:43:12.756183')[0m
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.4ms)[0m  [1m[31mDELETE FROM "articles";
+DELETE FROM "categories";
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at") VALUES (511275909, 'Artnb1', 'Blablabla', '2019-07-06 11:45:35.810020', '2019-07-06 11:45:35.810020');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (892527186, 'gjghjhjghjhjgj', '2019-07-06 11:45:35.813263', '2019-07-06 11:45:35.813263');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (298486374, 'MyString', '2019-07-06 11:45:35.813263', '2019-07-06 11:45:35.813263')[0m
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.4ms)[0m  [1m[31mDELETE FROM "articles";
+DELETE FROM "categories";
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at") VALUES (511275909, 'Artnb1', 'Blablabla', '2019-07-06 11:45:56.232457', '2019-07-06 11:45:56.232457');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (936648590, 'Arts and Entertainment', '2019-07-06 11:45:56.235989', '2019-07-06 11:45:56.235989');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (650464394, 'Computers and Electronics', '2019-07-06 11:45:56.235989', '2019-07-06 11:45:56.235989');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (613518908, 'Education and Communications', '2019-07-06 11:45:56.235989', '2019-07-06 11:45:56.235989');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (815188781, 'Family Life', '2019-07-06 11:45:56.235989', '2019-07-06 11:45:56.235989');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (158737960, 'Health', '2019-07-06 11:45:56.235989', '2019-07-06 11:45:56.235989');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (715615992, 'Travel', '2019-07-06 11:45:56.235989', '2019-07-06 11:45:56.235989')[0m
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.5ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.4ms)[0m  [1m[31mDELETE FROM "articles";
+DELETE FROM "categories";
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at") VALUES (205902574, 'How to Be Talented in Multiple Areas', 'Setting out to increase your talents and abilities in multiple disciplines is an audacious endeavor. It’s also very feasible to accomplish. In fact, it’s far easier to become talented in multiple areas than you may expect. Practicing the skills you wish to improve upon, maintaining a positive mindset, and broadening your base of interest and knowledge can all help you be talented in all sorts of ways.', '2019-07-06 11:47:15.051369', '2019-07-06 11:47:15.051369');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (936648590, 'Arts and Entertainment', '2019-07-06 11:47:15.054636', '2019-07-06 11:47:15.054636');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (650464394, 'Computers and Electronics', '2019-07-06 11:47:15.054636', '2019-07-06 11:47:15.054636');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (613518908, 'Education and Communications', '2019-07-06 11:47:15.054636', '2019-07-06 11:47:15.054636');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (815188781, 'Family Life', '2019-07-06 11:47:15.054636', '2019-07-06 11:47:15.054636');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (158737960, 'Health', '2019-07-06 11:47:15.054636', '2019-07-06 11:47:15.054636');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (715615992, 'Travel', '2019-07-06 11:47:15.054636', '2019-07-06 11:47:15.054636')[0m
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "articles";
+DELETE FROM "categories";
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at") VALUES (205902574, 'How to Be Talented in Multiple Areas', 'Setting out to increase your talents and abilities in multiple disciplines is an audacious endeavor. It’s also very feasible to accomplish. In fact, it’s far easier to become talented in multiple areas than you may expect. Practicing the skills you wish to improve upon, maintaining a positive mindset, and broadening your base of interest and knowledge can all help you be talented in all sorts of ways.', '2019-07-06 11:47:49.329529', '2019-07-06 11:47:49.329529');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (936648590, 'Arts and Entertainment', '2019-07-06 11:47:49.332845', '2019-07-06 11:47:49.332845');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (650464394, 'Computers and Electronics', '2019-07-06 11:47:49.332845', '2019-07-06 11:47:49.332845');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (613518908, 'Education and Communications', '2019-07-06 11:47:49.332845', '2019-07-06 11:47:49.332845');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (815188781, 'Family Life', '2019-07-06 11:47:49.332845', '2019-07-06 11:47:49.332845');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (158737960, 'Health', '2019-07-06 11:47:49.332845', '2019-07-06 11:47:49.332845');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (715615992, 'Travel', '2019-07-06 11:47:49.332845', '2019-07-06 11:47:49.332845')[0m
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "articles";
+DELETE FROM "categories";
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id") VALUES (205902574, 'How to Be Talented in Multiple Areas', 'Setting out to increase your talents and abilities in multiple disciplines is an audacious endeavor. It’s also very feasible to accomplish. In fact, it’s far easier to become talented in multiple areas than you may expect. Practicing the skills you wish to improve upon, maintaining a positive mindset, and broadening your base of interest and knowledge can all help you be talented in all sorts of ways.', '2019-07-06 11:48:54.348138', '2019-07-06 11:48:54.348138', NULL);
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (936648590, 'Arts and Entertainment', '2019-07-06 11:48:54.351412', '2019-07-06 11:48:54.351412');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (650464394, 'Computers and Electronics', '2019-07-06 11:48:54.351412', '2019-07-06 11:48:54.351412');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (613518908, 'Education and Communications', '2019-07-06 11:48:54.351412', '2019-07-06 11:48:54.351412');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (815188781, 'Family Life', '2019-07-06 11:48:54.351412', '2019-07-06 11:48:54.351412');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (158737960, 'Health', '2019-07-06 11:48:54.351412', '2019-07-06 11:48:54.351412');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (715615992, 'Travel', '2019-07-06 11:48:54.351412', '2019-07-06 11:48:54.351412')[0m
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.4ms)[0m  [1m[31mDELETE FROM "articles";
+DELETE FROM "categories";
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id") VALUES (205902574, 'Be Talented in Multiple Areas', 'Setting out to increase your talents and abilities in multiple disciplines is an audacious endeavor. It’s also very feasible to accomplish. In fact, it’s far easier to become talented in multiple areas than you may expect. Practicing the skills you wish to improve upon, maintaining a positive mindset, and broadening your base of interest and knowledge can all help you be talented in all sorts of ways.', '2019-07-06 12:09:21.312691', '2019-07-06 12:09:21.312691', 936648590);
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (936648590, 'Arts and Entertainment', '2019-07-06 12:09:21.316138', '2019-07-06 12:09:21.316138');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (650464394, 'Computers and Electronics', '2019-07-06 12:09:21.316138', '2019-07-06 12:09:21.316138');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (613518908, 'Education and Communications', '2019-07-06 12:09:21.316138', '2019-07-06 12:09:21.316138');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (815188781, 'Family Life', '2019-07-06 12:09:21.316138', '2019-07-06 12:09:21.316138');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (158737960, 'Health', '2019-07-06 12:09:21.316138', '2019-07-06 12:09:21.316138');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (715615992, 'Travel', '2019-07-06 12:09:21.316138', '2019-07-06 12:09:21.316138')[0m
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "articles";
+DELETE FROM "categories";
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id") VALUES (205902574, 'Be Talented in Multiple Areas', 'Setting out to increase your talents and abilities in multiple disciplines is an audacious endeavor. It’s also very feasible to accomplish. In fact, it’s far easier to become talented in multiple areas than you may expect. Practicing the skills you wish to improve upon, maintaining a positive mindset, and broadening your base of interest and knowledge can all help you be talented in all sorts of ways.', '2019-07-06 12:15:53.368524', '2019-07-06 12:15:53.368524', 936648590);
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id") VALUES (441185070, 'Reduce Entertainment Expenses', 'Spending money on movies, TV, and special events can cost you a surprising amount over time. The average family spends around thousands per year on entertainment, a number that can be greatly reduced by budgeting.[1] Whether you''re trying to budget at home or while traveling, you can reduce your entertainment expenses if you know where to cut back. Keep track of your budgeting and compare one month from another to see how your spending habits change.', '2019-07-06 12:15:53.368524', '2019-07-06 12:15:53.368524', 936648590);
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (936648590, 'Arts and Entertainment', '2019-07-06 12:15:53.371878', '2019-07-06 12:15:53.371878');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (650464394, 'Computers and Electronics', '2019-07-06 12:15:53.371878', '2019-07-06 12:15:53.371878');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (613518908, 'Education and Communications', '2019-07-06 12:15:53.371878', '2019-07-06 12:15:53.371878');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (815188781, 'Family Life', '2019-07-06 12:15:53.371878', '2019-07-06 12:15:53.371878');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (158737960, 'Health', '2019-07-06 12:15:53.371878', '2019-07-06 12:15:53.371878');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (715615992, 'Travel', '2019-07-06 12:15:53.371878', '2019-07-06 12:15:53.371878')[0m
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.9ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "articles";
+DELETE FROM "categories";
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id") VALUES (205902574, 'Be Talented in Multiple Areas', 'Setting out to increase your talents and abilities in multiple disciplines is an audacious endeavor. It’s also very feasible to accomplish. In fact, it’s far easier to become talented in multiple areas than you may expect. Practicing the skills you wish to improve upon, maintaining a positive mindset, and broadening your base of interest and knowledge can all help you be talented in all sorts of ways.', '2019-07-06 12:21:57.154935', '2019-07-06 12:21:57.154935', 936648590);
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id") VALUES (441185070, 'Reduce Entertainment Expenses', 'Spending money on movies, TV, and special events can cost you a surprising amount over time. The average family spends around thousands per year on entertainment, a number that can be greatly reduced by budgeting.[1] Whether you''re trying to budget at home or while traveling, you can reduce your entertainment expenses if you know where to cut back. Keep track of your budgeting and compare one month from another to see how your spending habits change.', '2019-07-06 12:21:57.154935', '2019-07-06 12:21:57.154935', 936648590);
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id") VALUES (95230506, 'Guess a Password', 'Though there''s no guaranteed way to guess a password, there are several methods that can lead you in the right direction. If you want to know how to guess a password, just follow these steps and you''ll be on your way.', '2019-07-06 12:21:57.154935', '2019-07-06 12:21:57.154935', 650464394);
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id") VALUES (755948663, 'Hack a Computer', 'This wikiHow teaches you how to hack a Windows or Mac computer''s login, as well as how to use TeamViewer to remotely control another computer.', '2019-07-06 12:21:57.154935', '2019-07-06 12:21:57.154935', 650464394);
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id") VALUES (508381591, 'Make a Travel Brochure', 'A creative, expertly written and well-designed travel brochure invites readers to cast themselves into a story that takes place in an exotic locale. In this article, learn how to make an enticing travel brochure that will have your audience fantasizing about-and booking-your travel packages.', '2019-07-06 12:21:57.154935', '2019-07-06 12:21:57.154935', 715615992);
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id") VALUES (141811563, 'Travel on Airplanes With a Gun', 'How to Travel on Airplanes With a Gun', '2019-07-06 12:21:57.154935', '2019-07-06 12:21:57.154935', 715615992);
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (936648590, 'Arts and Entertainment', '2019-07-06 12:21:57.158426', '2019-07-06 12:21:57.158426');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (650464394, 'Computers and Electronics', '2019-07-06 12:21:57.158426', '2019-07-06 12:21:57.158426');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (613518908, 'Education and Communications', '2019-07-06 12:21:57.158426', '2019-07-06 12:21:57.158426');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (815188781, 'Family Life', '2019-07-06 12:21:57.158426', '2019-07-06 12:21:57.158426');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (158737960, 'Health', '2019-07-06 12:21:57.158426', '2019-07-06 12:21:57.158426');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (715615992, 'Travel', '2019-07-06 12:21:57.158426', '2019-07-06 12:21:57.158426')[0m
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
