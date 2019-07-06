@@ -8,6 +8,13 @@
 </p>
 
 <p>
+  <strong>Visibility:</strong>
+  <% if @article.visibility %>
+    <%= @article.visibility %>
+  <% end %>
+</p>
+
+<p>
   <strong>Article:</strong>
   <%= @article.title %>
 </p>

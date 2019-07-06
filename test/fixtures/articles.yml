@@ -8,6 +8,7 @@ Be Talented in Multiple Areas:
            and broadening your base of interest and knowledge can all help you be talented in all sorts of ways.
 
   category: Arts and Entertainment
+  visibility: public
 
 Reduce Entertainment Expenses:
   title: Reduce Entertainment Expenses
@@ -18,6 +19,8 @@ Reduce Entertainment Expenses:
            budgeting and compare one month from another to see how your spending habits change.
 
   category: Arts and Entertainment
+  visibility: private
+
 
 #---------------------------------------------
 
@@ -28,6 +31,8 @@ Guess a Password:
            and you'll be on your way.
 
   category: Computers and Electronics
+  visibility: public
+
 
 Hack a Computer:
   title: Hack a Computer
@@ -35,6 +40,8 @@ Hack a Computer:
            use TeamViewer to remotely control another computer.
 
   category: Computers and Electronics
+  visibility: public
+
 
 #---------------------------------------------
 
@@ -45,9 +52,11 @@ Make a Travel Brochure:
            that will have your audience fantasizing about-and booking-your travel packages.
 
   category: Travel
+  visibility: private
 
 Travel on Airplanes With a Gun:
   title: Travel on Airplanes With a Gun
   content: How to Travel on Airplanes With a Gun
 
   category: Travel
+  visibility: private

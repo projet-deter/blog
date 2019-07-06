@@ -5645,3 +5645,65 @@ INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (7156
   [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
   [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddVisibilityToArticles (20190706122842)
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddVisibilityToArticles (20190706122842)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddVisibilityToArticles (20190706122842)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "articles" ADD "visibility" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190706122842"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "articles";
+DELETE FROM "categories";
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (205902574, 'Be Talented in Multiple Areas', 'Setting out to increase your talents and abilities in multiple disciplines is an audacious endeavor. It’s also very feasible to accomplish. In fact, it’s far easier to become talented in multiple areas than you may expect. Practicing the skills you wish to improve upon, maintaining a positive mindset, and broadening your base of interest and knowledge can all help you be talented in all sorts of ways.', '2019-07-06 12:32:46.756592', '2019-07-06 12:32:46.756592', 936648590, 'public');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (441185070, 'Reduce Entertainment Expenses', 'Spending money on movies, TV, and special events can cost you a surprising amount over time. The average family spends around thousands per year on entertainment, a number that can be greatly reduced by budgeting.[1] Whether you''re trying to budget at home or while traveling, you can reduce your entertainment expenses if you know where to cut back. Keep track of your budgeting and compare one month from another to see how your spending habits change.', '2019-07-06 12:32:46.756592', '2019-07-06 12:32:46.756592', 936648590, 'private');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id") VALUES (95230506, 'Guess a Password', 'Though there''s no guaranteed way to guess a password, there are several methods that can lead you in the right direction. If you want to know how to guess a password, just follow these steps and you''ll be on your way.', '2019-07-06 12:32:46.756592', '2019-07-06 12:32:46.756592', 650464394);
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id") VALUES (755948663, 'Hack a Computer', 'This wikiHow teaches you how to hack a Windows or Mac computer''s login, as well as how to use TeamViewer to remotely control another computer.', '2019-07-06 12:32:46.756592', '2019-07-06 12:32:46.756592', 650464394);
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id") VALUES (508381591, 'Make a Travel Brochure', 'A creative, expertly written and well-designed travel brochure invites readers to cast themselves into a story that takes place in an exotic locale. In this article, learn how to make an enticing travel brochure that will have your audience fantasizing about-and booking-your travel packages.', '2019-07-06 12:32:46.756592', '2019-07-06 12:32:46.756592', 715615992);
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id") VALUES (141811563, 'Travel on Airplanes With a Gun', 'How to Travel on Airplanes With a Gun', '2019-07-06 12:32:46.756592', '2019-07-06 12:32:46.756592', 715615992);
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (936648590, 'Arts and Entertainment', '2019-07-06 12:32:46.759934', '2019-07-06 12:32:46.759934');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (650464394, 'Computers and Electronics', '2019-07-06 12:32:46.759934', '2019-07-06 12:32:46.759934');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (613518908, 'Education and Communications', '2019-07-06 12:32:46.759934', '2019-07-06 12:32:46.759934');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (815188781, 'Family Life', '2019-07-06 12:32:46.759934', '2019-07-06 12:32:46.759934');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (158737960, 'Health', '2019-07-06 12:32:46.759934', '2019-07-06 12:32:46.759934');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (715615992, 'Travel', '2019-07-06 12:32:46.759934', '2019-07-06 12:32:46.759934')[0m
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "articles";
+DELETE FROM "categories";
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (205902574, 'Be Talented in Multiple Areas', 'Setting out to increase your talents and abilities in multiple disciplines is an audacious endeavor. It’s also very feasible to accomplish. In fact, it’s far easier to become talented in multiple areas than you may expect. Practicing the skills you wish to improve upon, maintaining a positive mindset, and broadening your base of interest and knowledge can all help you be talented in all sorts of ways.', '2019-07-06 12:37:36.490160', '2019-07-06 12:37:36.490160', 936648590, 'public');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (441185070, 'Reduce Entertainment Expenses', 'Spending money on movies, TV, and special events can cost you a surprising amount over time. The average family spends around thousands per year on entertainment, a number that can be greatly reduced by budgeting.[1] Whether you''re trying to budget at home or while traveling, you can reduce your entertainment expenses if you know where to cut back. Keep track of your budgeting and compare one month from another to see how your spending habits change.', '2019-07-06 12:37:36.490160', '2019-07-06 12:37:36.490160', 936648590, 'private');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (95230506, 'Guess a Password', 'Though there''s no guaranteed way to guess a password, there are several methods that can lead you in the right direction. If you want to know how to guess a password, just follow these steps and you''ll be on your way.', '2019-07-06 12:37:36.490160', '2019-07-06 12:37:36.490160', 650464394, 'public');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (755948663, 'Hack a Computer', 'This wikiHow teaches you how to hack a Windows or Mac computer''s login, as well as how to use TeamViewer to remotely control another computer.', '2019-07-06 12:37:36.490160', '2019-07-06 12:37:36.490160', 650464394, 'public');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (508381591, 'Make a Travel Brochure', 'A creative, expertly written and well-designed travel brochure invites readers to cast themselves into a story that takes place in an exotic locale. In this article, learn how to make an enticing travel brochure that will have your audience fantasizing about-and booking-your travel packages.', '2019-07-06 12:37:36.490160', '2019-07-06 12:37:36.490160', 715615992, 'private');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (141811563, 'Travel on Airplanes With a Gun', 'How to Travel on Airplanes With a Gun', '2019-07-06 12:37:36.490160', '2019-07-06 12:37:36.490160', 715615992, 'private');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (936648590, 'Arts and Entertainment', '2019-07-06 12:37:36.494062', '2019-07-06 12:37:36.494062');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (650464394, 'Computers and Electronics', '2019-07-06 12:37:36.494062', '2019-07-06 12:37:36.494062');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (613518908, 'Education and Communications', '2019-07-06 12:37:36.494062', '2019-07-06 12:37:36.494062');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (815188781, 'Family Life', '2019-07-06 12:37:36.494062', '2019-07-06 12:37:36.494062');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (158737960, 'Health', '2019-07-06 12:37:36.494062', '2019-07-06 12:37:36.494062');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (715615992, 'Travel', '2019-07-06 12:37:36.494062', '2019-07-06 12:37:36.494062')[0m
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
