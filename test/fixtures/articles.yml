@@ -1,9 +1,62 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# Fixture for articles
 
-one:
-  title: MyString
-  content: MyText
+Be Talented in Multiple Areas:
+  title: Be Talented in Multiple Areas
+  content: Setting out to increase your talents and abilities in multiple disciplines is an audacious endeavor.
+           It’s also very feasible to accomplish. In fact, it’s far easier to become talented in multiple areas
+           than you may expect. Practicing the skills you wish to improve upon, maintaining a positive mindset,
+           and broadening your base of interest and knowledge can all help you be talented in all sorts of ways.
 
-two:
-  title: MyString
-  content: MyText
+  category: Arts and Entertainment
+  visibility: public
+
+Reduce Entertainment Expenses:
+  title: Reduce Entertainment Expenses
+  content: Spending money on movies, TV, and special events can cost you a surprising amount over time.
+           The average family spends around thousands per year on entertainment, a number that can be
+           greatly reduced by budgeting.[1] Whether you're trying to budget at home or while traveling,
+           you can reduce your entertainment expenses if you know where to cut back. Keep track of your
+           budgeting and compare one month from another to see how your spending habits change.
+
+  category: Arts and Entertainment
+  visibility: private
+
+
+#---------------------------------------------
+
+Guess a Password:
+  title: Guess a Password
+  content: Though there's no guaranteed way to guess a password, there are several methods that can lead
+           you in the right direction. If you want to know how to guess a password, just follow these steps
+           and you'll be on your way.
+
+  category: Computers and Electronics
+  visibility: public
+
+
+Hack a Computer:
+  title: Hack a Computer
+  content: This wikiHow teaches you how to hack a Windows or Mac computer's login, as well as how to
+           use TeamViewer to remotely control another computer.
+
+  category: Computers and Electronics
+  visibility: public
+
+
+#---------------------------------------------
+
+Make a Travel Brochure:
+  title: Make a Travel Brochure
+  content: A creative, expertly written and well-designed travel brochure invites readers to cast themselves into
+           a story that takes place in an exotic locale. In this article, learn how to make an enticing travel brochure
+           that will have your audience fantasizing about-and booking-your travel packages.
+
+  category: Travel
+  visibility: private
+
+Travel on Airplanes With a Gun:
+  title: Travel on Airplanes With a Gun
+  content: How to Travel on Airplanes With a Gun
+
+  category: Travel
+  visibility: private

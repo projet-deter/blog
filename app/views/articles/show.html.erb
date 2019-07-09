@@ -1,5 +1,22 @@
+<%#   show one article %>
+
+<p id="notice"><%= notice %></p>
+
 <p>
-  <strong>Title:</strong>
+  <strong>Category:</strong>
+  <% if @article.category %>
+    <%= @article.category.name %>
+  <% end %>
+</p>
+
+<p>
+   <% if @article.visibility %>
+    <%= @article.visibility %>
+  <% end %>
+</p>
+
+<p>
+  <strong>Article:</strong>
   <%= @article.title %>
 </p>
 

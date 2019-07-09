@@ -1,0 +1,19 @@
+# # Fixture for categories
+
+Arts and Entertainment:
+  name: Arts and Entertainment
+
+Computers and Electronics:
+  name: Computers and Electronics
+
+Education and Communications:
+  name: Education and Communications
+
+Family Life:
+  name: Family Life
+
+Health:
+  name: Health
+
+Travel:
+  name: Travel
