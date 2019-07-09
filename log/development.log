@@ -5707,3 +5707,648 @@ INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (7156
   [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
   [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/articles/new" for ::1 at 2019-07-09 15:07:12 +0200
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/articles/_form.html.erb:18:in `map'
+  Rendered articles/_form.html.erb (Duration: 21.6ms | Allocations: 8879)
+  Rendered articles/new.html.erb within layouts/application (Duration: 24.3ms | Allocations: 9514)
+Completed 200 OK in 1397ms (Views: 1367.3ms | ActiveRecord: 1.6ms | Allocations: 1669462)
+
+
+Started GET "/articles" for ::1 at 2019-07-09 15:14:59 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (5.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1915)
+Completed 200 OK in 20ms (Views: 14.0ms | ActiveRecord: 5.0ms | Allocations: 9847)
+
+
+Started GET "/articles/new" for ::1 at 2019-07-09 15:15:29 +0200
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/articles/_form.html.erb:18:in `map'
+  Rendered articles/_form.html.erb (Duration: 5.0ms | Allocations: 2076)
+  Rendered articles/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2174)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.5ms | Allocations: 9943)
+
+
+Started GET "/articles" for ::1 at 2019-07-09 15:19:25 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1508)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.2ms | Allocations: 9269)
+
+
+Started GET "/articles/755948663" for ::1 at 2019-07-09 15:19:28 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"755948663"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 755948663], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:69:in `set_article'
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 650464394], ["LIMIT", 1]]
+  ↳ app/views/articles/show.html.erb:5
+  Rendered articles/show.html.erb within layouts/application (Duration: 9.3ms | Allocations: 4532)
+Completed 200 OK in 36ms (Views: 17.1ms | ActiveRecord: 0.4ms | Allocations: 18515)
+
+
+Started GET "/articles" for ::1 at 2019-07-09 15:36:46 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:18
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1883)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.2ms | Allocations: 10588)
+
+
+Started GET "/articles/new" for ::1 at 2019-07-09 15:36:48 +0200
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/articles/_form.html.erb:20:in `map'
+  Rendered articles/_form.html.erb (Duration: 5.1ms | Allocations: 2511)
+  Rendered articles/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2871)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.2ms | Allocations: 10781)
+
+
+Started GET "/articles/new" for ::1 at 2019-07-09 16:07:47 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/articles/_form.html.erb:20:in `map'
+  Rendered articles/_form.html.erb (Duration: 353.5ms | Allocations: 156171)
+  Rendered articles/new.html.erb within layouts/application (Duration: 354.7ms | Allocations: 156516)
+Completed 500 Internal Server Error in 366ms (ActiveRecord: 1.3ms | Allocations: 163644)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007fac6d003ef0>:0x00007fac6d001b78>):
+    32:     <%= form.text_area :content %>
+    33:   </div>
+    34: 
+    35:     <%= f.hidden_field :owner_id , :value => current_user.id %>
+    36: 
+    37:   <div class="actions">
+    38:     <%= form.submit %>
+  
+app/views/articles/_form.html.erb:35
+app/views/articles/_form.html.erb:3
+app/views/articles/new.html.erb:3
+Started GET "/articles/new" for ::1 at 2019-07-09 16:07:59 +0200
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/articles/_form.html.erb:20:in `map'
+  Rendered articles/_form.html.erb (Duration: 312.3ms | Allocations: 152115)
+  Rendered articles/new.html.erb within layouts/application (Duration: 313.3ms | Allocations: 152455)
+Completed 500 Internal Server Error in 316ms (ActiveRecord: 0.2ms | Allocations: 153764)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x00007fac67855a78>:0x00007fac6784db48>
+Did you mean?  current_page?):
+    32:     <%= form.text_area :content %>
+    33:   </div>
+    34: 
+    35:     <%= form.hidden_field :owner_id , :value => current_user.id %>
+    36: 
+    37:   <div class="actions">
+    38:     <%= form.submit %>
+  
+app/views/articles/_form.html.erb:35
+app/views/articles/_form.html.erb:3
+app/views/articles/new.html.erb:3
+Started GET "/articles" for ::1 at 2019-07-09 16:11:00 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 187ms (ActiveRecord: 0.0ms | Allocations: 100480)
+
+
+  
+NameError (undefined local variable or method `current_user' for #<ArticlesController:0x00007fac6c921da8>):
+  
+app/controllers/articles_controller.rb:7:in `index'
+Started GET "/articles" for ::1 at 2019-07-09 16:11:18 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 189ms (ActiveRecord: 0.0ms | Allocations: 100521)
+
+
+  
+NameError (undefined local variable or method `current_user' for #<ArticlesController:0x00007fac6d0d7160>):
+  
+app/controllers/articles_controller.rb:7:in `index'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (1.0ms)[0m  [1m[31mDELETE FROM "articles";
+DELETE FROM "categories";
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (205902574, 'Be Talented in Multiple Areas', 'Setting out to increase your talents and abilities in multiple disciplines is an audacious endeavor. It’s also very feasible to accomplish. In fact, it’s far easier to become talented in multiple areas than you may expect. Practicing the skills you wish to improve upon, maintaining a positive mindset, and broadening your base of interest and knowledge can all help you be talented in all sorts of ways.', '2019-07-09 14:11:53.569682', '2019-07-09 14:11:53.569682', 936648590, 'public');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (441185070, 'Reduce Entertainment Expenses', 'Spending money on movies, TV, and special events can cost you a surprising amount over time. The average family spends around thousands per year on entertainment, a number that can be greatly reduced by budgeting.[1] Whether you''re trying to budget at home or while traveling, you can reduce your entertainment expenses if you know where to cut back. Keep track of your budgeting and compare one month from another to see how your spending habits change.', '2019-07-09 14:11:53.569682', '2019-07-09 14:11:53.569682', 936648590, 'private');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (95230506, 'Guess a Password', 'Though there''s no guaranteed way to guess a password, there are several methods that can lead you in the right direction. If you want to know how to guess a password, just follow these steps and you''ll be on your way.', '2019-07-09 14:11:53.569682', '2019-07-09 14:11:53.569682', 650464394, 'public');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (755948663, 'Hack a Computer', 'This wikiHow teaches you how to hack a Windows or Mac computer''s login, as well as how to use TeamViewer to remotely control another computer.', '2019-07-09 14:11:53.569682', '2019-07-09 14:11:53.569682', 650464394, 'public');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (508381591, 'Make a Travel Brochure', 'A creative, expertly written and well-designed travel brochure invites readers to cast themselves into a story that takes place in an exotic locale. In this article, learn how to make an enticing travel brochure that will have your audience fantasizing about-and booking-your travel packages.', '2019-07-09 14:11:53.569682', '2019-07-09 14:11:53.569682', 715615992, 'private');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (141811563, 'Travel on Airplanes With a Gun', 'How to Travel on Airplanes With a Gun', '2019-07-09 14:11:53.569682', '2019-07-09 14:11:53.569682', 715615992, 'private');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (936648590, 'Arts and Entertainment', '2019-07-09 14:11:53.573278', '2019-07-09 14:11:53.573278');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (650464394, 'Computers and Electronics', '2019-07-09 14:11:53.573278', '2019-07-09 14:11:53.573278');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (613518908, 'Education and Communications', '2019-07-09 14:11:53.573278', '2019-07-09 14:11:53.573278');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (815188781, 'Family Life', '2019-07-09 14:11:53.573278', '2019-07-09 14:11:53.573278');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (158737960, 'Health', '2019-07-09 14:11:53.573278', '2019-07-09 14:11:53.573278');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (715615992, 'Travel', '2019-07-09 14:11:53.573278', '2019-07-09 14:11:53.573278')[0m
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+Started GET "/articles" for ::1 at 2019-07-09 16:12:02 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 183ms (ActiveRecord: 0.0ms | Allocations: 100437)
+
+
+  
+NameError (undefined local variable or method `current_user' for #<ArticlesController:0x00007fac644a1740>):
+  
+app/controllers/articles_controller.rb:7:in `index'
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserIdToArticles (20190709141910)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "articles" ADD "user_id" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190709141910"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "articles";
+DELETE FROM "categories";
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (205902574, 'Be Talented in Multiple Areas', 'Setting out to increase your talents and abilities in multiple disciplines is an audacious endeavor. It’s also very feasible to accomplish. In fact, it’s far easier to become talented in multiple areas than you may expect. Practicing the skills you wish to improve upon, maintaining a positive mindset, and broadening your base of interest and knowledge can all help you be talented in all sorts of ways.', '2019-07-09 14:19:35.993088', '2019-07-09 14:19:35.993088', 936648590, 'public');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (441185070, 'Reduce Entertainment Expenses', 'Spending money on movies, TV, and special events can cost you a surprising amount over time. The average family spends around thousands per year on entertainment, a number that can be greatly reduced by budgeting.[1] Whether you''re trying to budget at home or while traveling, you can reduce your entertainment expenses if you know where to cut back. Keep track of your budgeting and compare one month from another to see how your spending habits change.', '2019-07-09 14:19:35.993088', '2019-07-09 14:19:35.993088', 936648590, 'private');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (95230506, 'Guess a Password', 'Though there''s no guaranteed way to guess a password, there are several methods that can lead you in the right direction. If you want to know how to guess a password, just follow these steps and you''ll be on your way.', '2019-07-09 14:19:35.993088', '2019-07-09 14:19:35.993088', 650464394, 'public');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (755948663, 'Hack a Computer', 'This wikiHow teaches you how to hack a Windows or Mac computer''s login, as well as how to use TeamViewer to remotely control another computer.', '2019-07-09 14:19:35.993088', '2019-07-09 14:19:35.993088', 650464394, 'public');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (508381591, 'Make a Travel Brochure', 'A creative, expertly written and well-designed travel brochure invites readers to cast themselves into a story that takes place in an exotic locale. In this article, learn how to make an enticing travel brochure that will have your audience fantasizing about-and booking-your travel packages.', '2019-07-09 14:19:35.993088', '2019-07-09 14:19:35.993088', 715615992, 'private');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (141811563, 'Travel on Airplanes With a Gun', 'How to Travel on Airplanes With a Gun', '2019-07-09 14:19:35.993088', '2019-07-09 14:19:35.993088', 715615992, 'private');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (936648590, 'Arts and Entertainment', '2019-07-09 14:19:35.997676', '2019-07-09 14:19:35.997676');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (650464394, 'Computers and Electronics', '2019-07-09 14:19:35.997676', '2019-07-09 14:19:35.997676');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (613518908, 'Education and Communications', '2019-07-09 14:19:35.997676', '2019-07-09 14:19:35.997676');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (815188781, 'Family Life', '2019-07-09 14:19:35.997676', '2019-07-09 14:19:35.997676');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (158737960, 'Health', '2019-07-09 14:19:35.997676', '2019-07-09 14:19:35.997676');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (715615992, 'Travel', '2019-07-09 14:19:35.997676', '2019-07-09 14:19:35.997676')[0m
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/articles" for ::1 at 2019-07-09 16:24:15 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 196ms (ActiveRecord: 0.0ms | Allocations: 100442)
+
+
+  
+NameError (undefined local variable or method `current_user' for #<ArticlesController:0x00007fac65e19600>):
+  
+app/controllers/articles_controller.rb:7:in `index'
+Started GET "/articles" for ::1 at 2019-07-09 16:24:38 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:18
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 7675)
+Completed 200 OK in 24ms (Views: 20.2ms | ActiveRecord: 0.8ms | Allocations: 17608)
+
+
+Started GET "/articles" for ::1 at 2019-07-09 16:25:15 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:18
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 650464394], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:24
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 715615992], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:24
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 936648590], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:24
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 936648590], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:24
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 715615992], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:24
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 650464394], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:24
+  Rendered articles/index.html.erb within layouts/application (Duration: 16.1ms | Allocations: 10204)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 1.0ms | Allocations: 18710)
+
+
+Started GET "/articles" for ::1 at 2019-07-09 16:25:41 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:20
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 650464394], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 715615992], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 936648590], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 936648590], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 715615992], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 650464394], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.1ms | Allocations: 6362)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.5ms | Allocations: 15068)
+
+
+Started GET "/articles/new" for ::1 at 2019-07-09 16:27:35 +0200
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/articles/_form.html.erb:20:in `map'
+  Rendered articles/_form.html.erb (Duration: 282.0ms | Allocations: 152162)
+  Rendered articles/new.html.erb within layouts/application (Duration: 283.0ms | Allocations: 152503)
+Completed 500 Internal Server Error in 285ms (ActiveRecord: 0.2ms | Allocations: 153176)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x00007fac6cbffd18>:0x00007fac6a68ea48>
+Did you mean?  current_page?):
+    32:     <%= form.text_area :content %>
+    33:   </div>
+    34: 
+    35:     <%= form.hidden_field :owner_id , :value => current_user.id %>
+    36: 
+    37:   <div class="actions">
+    38:     <%= form.submit %>
+  
+app/views/articles/_form.html.erb:35
+app/views/articles/_form.html.erb:3
+app/views/articles/new.html.erb:3
+Started GET "/articles/new" for ::1 at 2019-07-09 16:27:56 +0200
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/articles/_form.html.erb:20:in `map'
+  Rendered articles/_form.html.erb (Duration: 306.6ms | Allocations: 152088)
+  Rendered articles/new.html.erb within layouts/application (Duration: 307.4ms | Allocations: 152428)
+Completed 500 Internal Server Error in 310ms (ActiveRecord: 0.1ms | Allocations: 153709)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x00007fac6a55f730>:0x00007fac6a55de08>
+Did you mean?  current_page?):
+    32:     <%= form.text_area :content %>
+    33:   </div>
+    34: 
+    35:     <%= form.hidden_field :user_id , :value => current_user.id %>
+    36: 
+    37:   <div class="actions">
+    38:     <%= form.submit %>
+  
+app/views/articles/_form.html.erb:35
+app/views/articles/_form.html.erb:3
+app/views/articles/new.html.erb:3
+Started GET "/articles/new" for ::1 at 2019-07-09 16:28:16 +0200
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/articles/_form.html.erb:20:in `map'
+  Rendered articles/_form.html.erb (Duration: 16.7ms | Allocations: 7790)
+  Rendered articles/new.html.erb within layouts/application (Duration: 17.6ms | Allocations: 8149)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.1ms | Allocations: 16667)
+
+
+Started POST "/articles" for ::1 at 2019-07-09 16:28:28 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"aHIPNgcK+0TMMsUMAbvperKfhcVuY6Jy9jxbouCaYp9tVCPMbVH5wyRiNcCis36mPPtrw/FzUmEaSwKaUFuACw==", "category_id"=>"650464394", "article"=>{"title"=>"hmglvh", "content"=>"kgliug;iub;j", "user_id"=>"666"}, "commit"=>"Create Article"}
+[31mUnpermitted parameter: :user_id[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:33:in `block in create'
+  [1m[36mArticle Create (0.8ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hmglvh"], ["content", "kgliug;iub;j"], ["created_at", "2019-07-09 14:28:28.153741"], ["updated_at", "2019-07-09 14:28:28.153741"]]
+  ↳ app/controllers/articles_controller.rb:33:in `block in create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:33:in `block in create'
+Redirected to http://localhost:3000/articles/980190963
+Completed 302 Found in 9ms (ActiveRecord: 1.9ms | Allocations: 3347)
+
+
+Started GET "/articles/980190963" for ::1 at 2019-07-09 16:28:28 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"980190963"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 980190963], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:70:in `set_article'
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 412)
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 0.2ms | Allocations: 9081)
+
+
+Started GET "/articles" for ::1 at 2019-07-09 16:28:30 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:20
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 650464394], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 715615992], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 936648590], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 936648590], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 715615992], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 650464394], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 6490)
+Completed 200 OK in 27ms (Views: 19.2ms | ActiveRecord: 0.5ms | Allocations: 14399)
+
+
+Started GET "/login" for ::1 at 2019-07-09 16:31:16 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+web-console (4.0.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/sign_in" for ::1 at 2019-07-09 16:31:25 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/sign_in"):
+  
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+web-console (4.0.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-07-09 16:31:28 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ludoviclecurieux/.rvm/gems/ruby-2.5.1/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ludoviclecurieux/.rvm/gems/ruby-2.5.1/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.0ms | Allocations: 200)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 1039)
+
+
+Started GET "/logout" for ::1 at 2019-07-09 16:37:50 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+web-console (4.0.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-07-09 16:38:00 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ludoviclecurieux/.rvm/gems/ruby-2.5.1/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ludoviclecurieux/.rvm/gems/ruby-2.5.1/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.1ms | Allocations: 195)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 984)
+
+

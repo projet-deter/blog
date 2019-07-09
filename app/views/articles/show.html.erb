@@ -1,3 +1,5 @@
+<%#   show one article %>
+
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -8,8 +10,7 @@
 </p>
 
 <p>
-  <strong>Visibility:</strong>
-  <% if @article.visibility %>
+   <% if @article.visibility %>
     <%= @article.visibility %>
   <% end %>
 </p>
