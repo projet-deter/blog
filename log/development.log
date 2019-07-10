@@ -7290,3 +7290,179 @@ Processing by Devise::SessionsController#new as HTML
   Rendered /Users/asmaebenslimane/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 2009)
 Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.0ms | Allocations: 10510)
 >>>>>>> master
+Started GET "/" for ::1 at 2019-07-10 14:29:11 +0200
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/articles" for ::1 at 2019-07-10 14:29:11 +0200
+Processing by ArticlesController#index as HTML
+Completed 401 Unauthorized in 25ms (ActiveRecord: 0.0ms | Allocations: 1560)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-07-10 14:29:11 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/leyla/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/leyla/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (Duration: 2.3ms | Allocations: 656)
+  Rendered /home/leyla/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 32.3ms | Allocations: 4178)
+Completed 200 OK in 1357ms (Views: 1327.3ms | ActiveRecord: 5.4ms | Allocations: 1583060)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-07-10 14:29:30 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/leyla/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/leyla/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 218)
+  Rendered /home/leyla/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 127)
+  Rendered /home/leyla/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 15.7ms | Allocations: 2037)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.0ms | Allocations: 10161)
+
+
+Started POST "/users" for ::1 at 2019-07-10 14:30:00 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"mPCEp98WpuePOaeoZRqxPEHXIxmUkqj+GQ6yVX4r0BBUJERwqoIBrGj1XlMyE6RVHQDtDgeC2xKMzLxHyldH7g==", "user"=>{"email"=>"leyla.lenoan@outlook.fr", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "leyla.lenoan@outlook.fr"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "leyla.lenoan@outlook.fr"], ["encrypted_password", "$2a$11$w740EWoBIAILga19CdR2wegFg5jaWXwgitIhW1IiSb5uwNdSf09NS"], ["created_at", "2019-07-10 12:30:00.369147"], ["updated_at", "2019-07-10 12:30:00.369147"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 236ms (ActiveRecord: 3.3ms | Allocations: 15779)
+
+
+Started GET "/articles" for ::1 at 2019-07-10 14:30:00 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:20
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 650464394], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 715615992], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 936648590], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 936648590], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 715615992], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 650464394], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  Rendered articles/index.html.erb within layouts/application (Duration: 97.9ms | Allocations: 18978)
+Completed 200 OK in 145ms (Views: 116.2ms | ActiveRecord: 6.9ms | Allocations: 31584)
+
+
+Started GET "/articles/95230506" for ::1 at 2019-07-10 14:30:48 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"95230506"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 95230506], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:70:in `set_article'
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 650464394], ["LIMIT", 1]]
+  ↳ app/views/articles/show.html.erb:7
+  Rendered articles/show.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1189)
+Completed 200 OK in 39ms (Views: 17.6ms | ActiveRecord: 0.9ms | Allocations: 11447)
+
+
+Started GET "/articles" for ::1 at 2019-07-10 14:30:58 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:20
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 650464394], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 715615992], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 936648590], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 936648590], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 715615992], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 650464394], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  Rendered articles/index.html.erb within layouts/application (Duration: 37.5ms | Allocations: 6172)
+Completed 200 OK in 62ms (Views: 55.1ms | ActiveRecord: 2.1ms | Allocations: 15536)
+
+
+Started GET "/users/edit" for ::1 at 2019-07-10 14:31:09 +0200
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/leyla/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/devise-4.6.2/app/views/devise/registrations/edit.html.erb within layouts/application
+  Rendered /home/leyla/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered /home/leyla/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/devise-4.6.2/app/views/devise/registrations/edit.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1939)
+Completed 200 OK in 31ms (Views: 25.1ms | ActiveRecord: 0.3ms | Allocations: 11599)
+
+
+Started GET "/articles" for ::1 at 2019-07-10 14:31:18 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:20
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 650464394], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 715615992], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 936648590], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 936648590], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 715615992], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 650464394], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  Rendered articles/index.html.erb within layouts/application (Duration: 35.0ms | Allocations: 6178)
+Completed 200 OK in 74ms (Views: 65.5ms | ActiveRecord: 1.6ms | Allocations: 15536)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-07-10 14:31:21 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"QCihOsU9xhmJsMQs6wDAKzhdo5FnrSU2P6K5/CNfQnY/hwnZsVtVnWPz8xBHwhuVdrbcfrZCrKfPicLjzbDdkQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 22ms (ActiveRecord: 0.2ms | Allocations: 7718)
+
+
+Started GET "/" for ::1 at 2019-07-10 14:31:21 +0200
+Started GET "/articles" for ::1 at 2019-07-10 14:31:21 +0200
+Processing by ArticlesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-07-10 14:31:21 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/leyla/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/leyla/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered /home/leyla/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1103)
+Completed 200 OK in 42ms (Views: 39.9ms | ActiveRecord: 0.0ms | Allocations: 8563)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-07-10 14:31:24 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"ZLNZ/FXZv20psHg/qmoGw9t40ayxtexjcyuLhu0ipyW64flMYDgJO5/CFg07T9xnWBtkeu+SdbQYe4h2cMegBg==", "user"=>{"email"=>"leyla.lenoan@outlook.fr", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "leyla.lenoan@outlook.fr"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 219ms (ActiveRecord: 1.6ms | Allocations: 4490)
+
+
+Started GET "/articles" for ::1 at 2019-07-10 14:31:25 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:20
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 650464394], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 715615992], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 936648590], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 936648590], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 715615992], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 650464394], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:26
+  Rendered articles/index.html.erb within layouts/application (Duration: 32.9ms | Allocations: 6172)
+Completed 200 OK in 63ms (Views: 55.0ms | ActiveRecord: 2.9ms | Allocations: 15546)
+
+
