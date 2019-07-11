@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-#    @articles = Article.where(user_id:current_user.id)
+    #@articles = Article.where(user_id:current_user.id)
 
     @articles = Article.all
     @category = Category.all

@@ -16,10 +16,8 @@
   <div class="field">
     <%= form.label :category_id %>
 
-    <%= select_tag(:category_id,
-                   options_for_select(Category.all.map { |c| [ c.name, c.id ] }),
-                   include_blank: "Select Category") %>
-         
+    <%= select_tag(:category_id, options_for_select(Category.all.map { |c| [ c.name, c.id ] }), include_blank: "Select Category") %>
+
   </div>
 
   <div class="field">
@@ -31,9 +29,14 @@
     <%= form.label :content %>
     <%= form.text_area :content %>
   </div>
+  <div class="field">
+    <% if current_user %>
+        User ID:<%= current_user.id %>
+        User Name: <%= current_user.email %>
+        <%= form.hidden_field :user_id, value: current_user.id%>
+    <% end %>
 
-    <%= form.hidden_field :user_id , :value => 666 %>
-
+</div>
   <div class="actions">
     <%= form.submit %>
   </div>

@@ -1,7 +1,7 @@
 # Fixture for articles
 
 Be Talented in Multiple Areas:
-  title: Be Talented in Multiple Areas
+  title: How to Be Talented in Multiple Areas
   content: Setting out to increase your talents and abilities in multiple disciplines is an audacious endeavor.
            It’s also very feasible to accomplish. In fact, it’s far easier to become talented in multiple areas
            than you may expect. Practicing the skills you wish to improve upon, maintaining a positive mindset,
@@ -53,6 +53,7 @@ Make a Travel Brochure:
 
   category: Travel
   visibility: private
+  user: admin
 
 Travel on Airplanes With a Gun:
   title: Travel on Airplanes With a Gun
@@ -60,3 +61,4 @@ Travel on Airplanes With a Gun:
 
   category: Travel
   visibility: private
+  user: admin
