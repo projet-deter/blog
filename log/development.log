@@ -10491,3 +10491,163 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 9766)
 
 
+Started GET "/articles" for ::1 at 2019-07-11 22:18:39 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 135138681], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:21
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2610)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.2ms | Allocations: 11813)
+
+
+Started GET "/articles" for ::1 at 2019-07-11 22:18:45 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 135138681], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:21
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2180)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.3ms | Allocations: 10112)
+
+
+Started GET "/articles" for ::1 at 2019-07-11 22:20:33 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 135138681], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:21
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2176)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.2ms | Allocations: 10102)
+
+
+Started GET "/articles" for ::1 at 2019-07-11 22:20:35 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 135138681], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:21
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2176)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.3ms | Allocations: 10104)
+
+
+Started GET "/articles" for ::1 at 2019-07-11 22:20:49 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 135138681], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:21
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2176)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.2ms | Allocations: 10114)
+
+
+Started GET "/articles" for ::1 at 2019-07-11 22:20:50 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 135138681], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:21
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2176)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.2ms | Allocations: 10102)
+
+
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "articles";
+DELETE FROM "categories";
+DELETE FROM "users";
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (205902574, 'Be Talented in Multiple Areas', 'Setting out to increase your talents and abilities in multiple disciplines is an audacious endeavor. It’s also very feasible to accomplish. In fact, it’s far easier to become talented in multiple areas than you may expect. Practicing the skills you wish to improve upon, maintaining a positive mindset, and broadening your base of interest and knowledge can all help you be talented in all sorts of ways.', '2019-07-11 20:20:50.892711', '2019-07-11 20:20:50.892711', 936648590, 'public');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (441185070, 'Reduce Entertainment Expenses', 'Spending money on movies, TV, and special events can cost you a surprising amount over time. The average family spends around thousands per year on entertainment, a number that can be greatly reduced by budgeting.[1] Whether you''re trying to budget at home or while traveling, you can reduce your entertainment expenses if you know where to cut back. Keep track of your budgeting and compare one month from another to see how your spending habits change.', '2019-07-11 20:20:50.892711', '2019-07-11 20:20:50.892711', 936648590, 'private');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (95230506, 'Guess a Password', 'Though there''s no guaranteed way to guess a password, there are several methods that can lead you in the right direction. If you want to know how to guess a password, just follow these steps and you''ll be on your way.', '2019-07-11 20:20:50.892711', '2019-07-11 20:20:50.892711', 650464394, 'public');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility") VALUES (755948663, 'Hack a Computer', 'This wikiHow teaches you how to hack a Windows or Mac computer''s login, as well as how to use TeamViewer to remotely control another computer.', '2019-07-11 20:20:50.892711', '2019-07-11 20:20:50.892711', 650464394, 'public');
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility", "user_id") VALUES (508381591, 'Make a Travel Brochure', 'A creative, expertly written and well-designed travel brochure invites readers to cast themselves into a story that takes place in an exotic locale. In this article, learn how to make an enticing travel brochure that will have your audience fantasizing about-and booking-your travel packages.', '2019-07-11 20:20:50.892711', '2019-07-11 20:20:50.892711', 715615992, 'public', 135138680);
+INSERT INTO "articles" ("id", "title", "content", "created_at", "updated_at", "category_id", "visibility", "user_id") VALUES (141811563, 'Travel on Airplanes With a Gun', 'How to Travel on Airplanes With a Gun', '2019-07-11 20:20:50.892711', '2019-07-11 20:20:50.892711', 715615992, 'private', 135138680);
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (936648590, 'Arts and Entertainment', '2019-07-11 20:20:50.894244', '2019-07-11 20:20:50.894244');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (650464394, 'Computers and Electronics', '2019-07-11 20:20:50.894244', '2019-07-11 20:20:50.894244');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (613518908, 'Education and Communications', '2019-07-11 20:20:50.894244', '2019-07-11 20:20:50.894244');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (815188781, 'Family Life', '2019-07-11 20:20:50.894244', '2019-07-11 20:20:50.894244');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (158737960, 'Health', '2019-07-11 20:20:50.894244', '2019-07-11 20:20:50.894244');
+INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (715615992, 'Travel', '2019-07-11 20:20:50.894244', '2019-07-11 20:20:50.894244');
+INSERT INTO "users" ("id", "email", "encrypted_password", "created_at", "updated_at") VALUES (135138680, 'admin@admin.com', '$2a$11$jOyEqLq9oORaaZtEPGnloO/yMGqqOsjaQ8qru266CEA0X9s0.vQRu', '2019-07-11 20:20:50.895002', '2019-07-11 20:20:50.895002')[0m
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+Started GET "/articles" for ::1 at 2019-07-11 22:20:51 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 135138681], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:21
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2244)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.2ms | Allocations: 10198)
+
+
+Started GET "/articles" for ::1 at 2019-07-11 22:20:53 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:20
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1299)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.1ms | Allocations: 9238)
+
+
+Started GET "/articles" for ::1 at 2019-07-11 22:20:54 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:20
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1299)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 9239)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-07-11 22:20:56 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/ludoviclecurieux/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/ludoviclecurieux/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 562)
+  Rendered /Users/ludoviclecurieux/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2082)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 11445)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-07-11 22:21:00 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"FuZVkD/FEg0a+j7PfyY5yAPXYg5f1LVPp8RUL0PU/wyorGJTwCJFZMGOtaB9DwifKNU3XDafkOFAsCmC0wqAxQ==", "user"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "admin@admin.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 141ms (ActiveRecord: 0.2ms | Allocations: 5032)
+
+
+Started GET "/" for ::1 at 2019-07-11 22:21:00 +0200
+Started GET "/articles" for ::1 at 2019-07-11 22:21:00 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 135138680], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:21
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2458)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.2ms | Allocations: 10405)
+
+
+Started GET "/articles" for ::1 at 2019-07-11 22:22:00 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 135138680], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:22
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2802)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.3ms | Allocations: 11999)
+
+

@@ -7,6 +7,7 @@
 <table>
   <thead>
     <tr>
+      <th>Visibility</th>
       <th>Categories</th>
       <th>Title</th>
       <th>Content</th>
@@ -18,8 +19,9 @@
   <tbody>
 
     <% @articles.each do |article| %>
-    <% if current_user && article.user_id == current_user.id %>
+    <% if (current_user && article.user_id == current_user.id) || (current_user && article.user_id != current_user.id && article.visibility == 'public') %>
         <tr>
+          <td><%= article.visibility %></td>
           <td><%= article.category_id %></td>
           <td><%= article.title %></td>
           <td><%= article.content %></td>

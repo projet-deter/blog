@@ -52,7 +52,7 @@ Make a Travel Brochure:
            that will have your audience fantasizing about-and booking-your travel packages.
 
   category: Travel
-  visibility: private
+  visibility: public
   user: admin
 
 
