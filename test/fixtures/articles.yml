@@ -53,6 +53,8 @@ Make a Travel Brochure:
 
   category: Travel
   visibility: private
+  user: admin
+
 
 Travel on Airplanes With a Gun:
   title: Travel on Airplanes With a Gun
@@ -60,3 +62,4 @@ Travel on Airplanes With a Gun:
 
   category: Travel
   visibility: private
+  user: admin

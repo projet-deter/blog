@@ -16,10 +16,9 @@
   <div class="field">
     <%= form.label :category_id %>
 
-    <%= select_tag(:category_id,
-                   options_for_select(Category.all.map { |c| [ c.name, c.id ] }),
-                   include_blank: "Select Category") %>
-         
+    <%= collection_select(:article, :category_id, Category.all, :id, :name, prompt: true ) %>
+
+
   </div>
 
   <div class="field">
@@ -31,8 +30,6 @@
     <%= form.label :content %>
     <%= form.text_area :content %>
   </div>
-
-    <%= form.hidden_field :user_id , :value => 666 %>
 
   <div class="actions">
     <%= form.submit %>
